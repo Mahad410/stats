@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #090b1a;
+    min-height: 100vh;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    min-height: 450px;
+    background: #1b1938;
+    box-sizing: border-box;
+    border-radius: 8px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+img {
+    height: 100%;
+}
+
+.image {
+    position: relative;
+}
+
+.image::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    background: #aa5cdb;
+    min-height: 100%;
+    mix-blend-mode: overlay;
+}
+
+.intro {
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 70px;
+}
+
+.intro h1 {
+    font-size: 2rem;
+    text-align: left;
+}
+
+.intro p {
+    font-size: 1rem;
+    text-align: left;
+    color: #ffffffbf;
+    margin: 30px auto;
+}
+
+.purple {
+    color: #aa5cdb;
+}
+
+.inline-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inline-block h2 {
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 50px;
+}
+
+.inline-block p {
+    margin: 10px auto;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.imagembl {
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .image {
+        order: 1;
+    }
+    .intro {
+        order: 2;
+        padding: 30px;
+    }
+    .intro h1 {
+        text-align: center;
+    }
+    .intro p {
+        text-align: center;
+    }
+    .imagembl {
+        display: block;
+    }
+    .imagepc {
+        display: none;
+    }
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .inline-block {
+        display: block;
+    }
+    main {
+        padding: 130px 0;
+    }
+    .inline-block h2 {
+        margin-top: 20px;
+    }
+    .inline-block p {
+        margin: 8px auto;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .intro h1 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .intro p {
+        font-size: 0.85rem;
+    }
+    .container {
+        width: 300px;
+    }
+    .inline-block h2 {
+        margin-top: 10px;
+    }
+    .inline-block p {
+        margin: 5px auto;
+    }
+}
