@@ -137,6 +137,9 @@ img {
 }
 
 @media screen and (max-width: 475px) {
+    .intro {
+        padding: 20px;
+    }
     .intro h1 {
         text-align: center;
         font-size: 1.5rem;
@@ -145,7 +148,7 @@ img {
         font-size: 0.85rem;
     }
     .container {
-        width: 300px;
+        width: 280px;
     }
     .inline-block h2 {
         margin-top: 15px;
