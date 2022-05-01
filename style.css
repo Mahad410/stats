@@ -54,9 +54,10 @@ img {
 .intro {
     font-family: 'Inter', sans-serif;
     color: #fff;
-    display: block;
-    text-align: center;
-    padding: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 70px;
 }
 
 .intro h1 {
@@ -84,6 +85,7 @@ img {
 .inline-block h2 {
     font-family: 'Lexend Deca', sans-serif;
     margin-top: 50px;
+    text-align: center;
 }
 
 .inline-block p {
@@ -120,10 +122,10 @@ img {
         grid-template-columns: 1fr;
     }
     .inline-block {
-        display: block;
+        flex-direction: column;
     }
     main {
-        padding: 50px 0;
+        padding: 100px 0;
     }
     .inline-block h2 {
         margin-top: 20px;
@@ -150,5 +152,8 @@ img {
     }
     .inline-block p {
         margin: 5px auto;
+    }
+    main {
+        padding: 60px 0;
     }
 }
